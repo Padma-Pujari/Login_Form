@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8d2ViJTIwZGV2ZWxvcG1lbnQlMjBkYXJrfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -2;
+    animation: zoomInOut 5s ease ;
+    color: white;
+}
+/**-------Key frames------*/
+@keyframes zoomInOut{
+    0%,100%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.5);
+    }
+}
+.content{
+    margin: 8%;
+    background-color: transparent;
+    padding: 4rem 1rem 4rem 1rem;
+    box-shadow: 0 0 5px 5px rgba(0,0,0, .05);
+}
+
+.signin-txt{
+    font-weight: 500 !important;
+    
+}
+.form-control{
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    border-color: #00ac96 !important;
+    border-radius: 1px solid !important;
+    padding: 0px;
+    color: #495057;
+    height: auto;
+    border-radius: 0;
+    background-color: #fff;
+    background-clip: padding-box;
+}
+
+.form-control:focus{
+    color: #495057;
+    background-color: #fff;
+    border-color: #fff;
+    outline: 0;
+    box-shadow: none;
+}
+
+.btn-class{
+    border-color: #00ac96;
+    color: #00ac96;
+
+}
+.btn-class:hover{
+    background-color: rgb(206, 127, 23);
+    color: #fff;
+}
+.form-grp .form-check label{
+    color: white;
+}
+.copyright{
+    font-weight: 500;
+    width: 100%;
+    text-align: left;
+    margin-top: 5px;
+    font-size: 14px;
+    padding: 25px 15px;
+    border-top: 1px solid var(--white-light);
+    margin: 80px 0 0;
+}
